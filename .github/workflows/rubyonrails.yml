@@ -39,7 +39,7 @@ jobs:
       - name: Set up database schema
         run: bin/rails db:schema:dump
       - name: Migrating
-        run: rake db:migrate:redo
+        run: bin/rails db:migrate:redo
       # Add or replace test runners here
       - name: Run tests
         run: bin/rake
