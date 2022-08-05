@@ -34,7 +34,7 @@ jobs:
         with:
           bundler-cache: true
       - name: Clearing cache
-        run: bin/rails db:schema:create
+        run: bin/rails db:schema:cache:clear
       # Add or replace database setup steps here
       - name: Set up database schema
         run: bin/rails db:schema:create
